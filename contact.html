@@ -10,9 +10,10 @@
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="manifest" href="site.webmanifest">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/animations.js" defer></script>
-    <script src="assets/js/contact.js" defer></script>
+    <link rel="stylesheet" href="assets/css/style.css?v=20261125">
+    <script src="assets/js/animations.js?v=20261125" defer></script>
+    <script src="assets/js/navigation.js?v=20261125" defer></script>
+    <script src="assets/js/contact.js?v=20261125" defer></script>
 </head>
 <body>
     <a class="skip-link" href="#main">Ga naar de inhoud</a>
@@ -20,9 +21,12 @@
     <header class="site-header">
         <nav class="navbar container" aria-label="Hoofdnavigatie">
             <a class="brand" href="index.html" aria-label="Bon Courage, naar de startpagina">
-                <img src="assets/images/logo-navbar.png" alt="Bon-Courage" class="site-logo" width="870" height="609">
+                <img src="assets/images/logo-navbar.png?v=20261125" alt="Bon-Courage" class="site-logo" width="870" height="609">
             </a>
-            <ul class="nav-links">
+            <button class="nav-toggle" type="button" aria-controls="main-navigation" aria-expanded="false" aria-label="Menu openen">
+                <span class="nav-toggle-icon" aria-hidden="true"><span></span><span></span><span></span></span> Menu
+            </button>
+            <ul class="nav-links" id="main-navigation">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="over.html">Over ons</a></li>
                 <li><a href="diensten.html">Diensten</a></li>
@@ -43,7 +47,7 @@
                         <h1>Laten we kennismaken.</h1>
                         <p class="hero-lead">Bespreek vrijblijvend uw onderneming, uw administratie en de ondersteuning die u zoekt. We denken graag met u mee.</p>
                     </div>
-                    <img class="hero-alt-image" src="assets/images/overleg-stock.jpg" alt="Twee mensen bespreken documenten" width="800" height="533">
+                    <img class="hero-alt-image" src="assets/images/overleg-stock.jpg?v=20261125" alt="Twee mensen bespreken documenten" width="800" height="533">
                 </div>
             </div>
         </section>
@@ -109,7 +113,7 @@
     <footer class="site-footer">
         <div class="container footer-grid">
             <div class="footer-col footer-brand">
-                <a class="footer-logo" href="index.html" aria-label="Bon-Courage, naar de startpagina"><img src="assets/images/logo-footer.png" alt="Bon-Courage" width="870" height="609" loading="lazy"></a>
+                <a class="footer-logo" href="index.html" aria-label="Bon-Courage, naar de startpagina"><img src="assets/images/logo-footer.png?v=20261125" alt="Bon-Courage" width="870" height="609" loading="lazy"></a>
                 <p class="footer-tagline">Wij kijken verder dan uw cijfers.</p>
                 <p>Persoonlijke aandacht, slimme administratie en fiscaal advies voor ondernemers.</p>
             </div>

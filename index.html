@@ -18,9 +18,10 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="manifest" href="site.webmanifest">
     <meta property="og:image" content="https://bon-courage.nl/assets/images/og-image-1200x630.png">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/animations.js" defer></script>
-    <script src="assets/js/aanvraag.js" defer></script>
+    <link rel="stylesheet" href="assets/css/style.css?v=20261125">
+    <script src="assets/js/animations.js?v=20261125" defer></script>
+    <script src="assets/js/navigation.js?v=20261125" defer></script>
+    <script src="assets/js/aanvraag.js?v=20261125" defer></script>
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
@@ -96,9 +97,12 @@
     <header class="site-header">
         <nav class="navbar container" aria-label="Hoofdnavigatie">
             <a class="brand" href="index.html" aria-label="Bon Courage, naar de startpagina">
-                <img src="assets/images/logo-navbar.png" alt="Bon-Courage" class="site-logo" width="870" height="609">
+                <img src="assets/images/logo-navbar.png?v=20261125" alt="Bon-Courage" class="site-logo" width="870" height="609">
             </a>
-            <ul class="nav-links">
+            <button class="nav-toggle" type="button" aria-controls="main-navigation" aria-expanded="false" aria-label="Menu openen">
+                <span class="nav-toggle-icon" aria-hidden="true"><span></span><span></span><span></span></span> Menu
+            </button>
+            <ul class="nav-links" id="main-navigation">
                 <li><a href="index.html" class="nav-active">Home</a></li>
                 <li><a href="over.html">Over ons</a></li>
                 <li><a href="diensten.html">Diensten</a></li>
@@ -124,7 +128,7 @@
                     </div>
                 </div>
                 <div class="home-hero-photo">
-                    <img src="assets/images/overleg-stock.jpg" alt="Ondernemers overleggen aan tafel" width="800" height="533">
+                    <img src="assets/images/overleg-stock.jpg?v=20261125" alt="Ondernemers overleggen aan tafel" width="800" height="533">
                 </div>
             </div>
         </section>
@@ -169,7 +173,7 @@
                     <p>Met SnelStart en digitale factuurverwerking houden we uw administratie overzichtelijk en beperken we handmatig werk.</p>
                     <ul class="check-list"><li>Digitale verwerking van documenten</li><li>Bankkoppelingen waar passend</li><li>Financiële gegevens beter toegankelijk</li></ul>
                 </div>
-                <div class="software-mark"><img src="assets/images/snelstart-logo.svg" alt="SnelStart" width="4000" height="706" loading="lazy"></div>
+                <div class="software-mark"><img src="assets/images/snelstart-logo.svg?v=20261125" alt="SnelStart" width="4000" height="706" loading="lazy"></div>
             </div>
         </section>
 
@@ -263,7 +267,7 @@
     <footer class="site-footer">
         <div class="container footer-grid">
             <div class="footer-col footer-brand">
-                <a class="footer-logo" href="index.html" aria-label="Bon-Courage, naar de startpagina"><img src="assets/images/logo-footer.png" alt="Bon-Courage" width="870" height="609" loading="lazy"></a>
+                <a class="footer-logo" href="index.html" aria-label="Bon-Courage, naar de startpagina"><img src="assets/images/logo-footer.png?v=20261125" alt="Bon-Courage" width="870" height="609" loading="lazy"></a>
                 <p class="footer-tagline">Wij kijken verder dan uw cijfers.</p>
                 <p>Persoonlijke aandacht, slimme administratie en fiscaal advies voor ondernemers.</p>
             </div>
