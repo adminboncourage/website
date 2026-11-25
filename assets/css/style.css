@@ -249,7 +249,7 @@ legend { padding: 0; margin-bottom: 20px; color: var(--deep); font-size: 1.2rem;
 .home-software-section .software-panel .section-label { color: #ffd39e; }
 .home-software-section .check-list li::before { color: var(--gold); }
 .home-software-section .check-list { color: #fff; }
-.home-software-section .software-mark { min-height: 260px; background: var(--paper); }
+.home-software-section .software-mark { min-height: 260px; background: var(--cream); }
 .home-audience-section { position: relative; overflow: hidden; background: var(--blue); }
 .home-audience-section .editorial-split { align-items: center; }
 .home-audience-section .editorial-split > div:first-child { padding-left: 32px; border-left: 5px solid var(--gold); }
