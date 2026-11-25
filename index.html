@@ -1,150 +1,308 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bon Courage | Financiële Administratie & Advies</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=1.2">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Persoonlijke boekhouder en administratiekantoor in Beek voor zzp, mkb en starters in Zuid-Limburg. Boekhouding uitbesteden, btw, jaarrekening en belastingadvies met duidelijke tarieven.">
+    <link rel="canonical" href="https://bon-courage.nl/">
+    <meta name="theme-color" content="#f5ecde">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="nl_NL">
+    <meta property="og:site_name" content="Bon Courage">
+    <meta property="og:url" content="https://bon-courage.nl/">
+    <meta property="og:title" content="Boekhouder Beek en Zuid-Limburg | Bon-Courage">
+    <meta property="og:description" content="Persoonlijke boekhouder en administratiekantoor voor zzp, mkb en starters in Beek, Sittard-Geleen, Maastricht en heel Zuid-Limburg.">
+    <title>Boekhouder Beek &amp; Zuid-Limburg | Administratiekantoor voor ondernemers | Bon-Courage</title>
+    <link rel="icon" href="favicon.ico" sizes="48x48">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta property="og:image" content="https://bon-courage.nl/assets/images/og-image-1200x630.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/animations.js" defer></script>
+    <script src="assets/js/aanvraag.js" defer></script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "AccountingService",
+            "name": "Bon-Courage",
+            "url": "https://bon-courage.nl/",
+            "email": "daniel.commers@bon-courage.nl",
+            "telephone": "+31 6 38850967",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Brugstraat 2",
+                "postalCode": "6191 KC",
+                "addressLocality": "Beek",
+                "addressCountry": "NL"
+            },
+            "image": "https://bon-courage.nl/assets/images/logo.png",
+            "description": "Persoonlijk administratiekantoor en boekhouder voor zzp'ers, mkb, starters en BV's in Beek en Zuid-Limburg.",
+            "areaServed": [
+                {"@type": "City", "name": "Beek"},
+                {"@type": "City", "name": "Sittard-Geleen"},
+                {"@type": "City", "name": "Maastricht"},
+                {"@type": "City", "name": "Stein"},
+                {"@type": "City", "name": "Elsloo"},
+                {"@type": "City", "name": "Meerssen"},
+                {"@type": "City", "name": "Born"},
+                {"@type": "City", "name": "Echt"},
+                {"@type": "City", "name": "Schinnen"},
+                {"@type": "City", "name": "Heerlen"},
+                {"@type": "City", "name": "Valkenburg"},
+                {"@type": "City", "name": "Nuth"},
+                {"@type": "City", "name": "Brunssum"},
+                {"@type": "City", "name": "Kerkrade"},
+                {"@type": "City", "name": "Landgraaf"},
+                {"@type": "AdministrativeArea", "name": "Zuid-Limburg"},
+                {"@type": "AdministrativeArea", "name": "Limburg"}
+            ],
+            "knowsAbout": ["Boekhouding", "Btw-aangifte", "Jaarrekening", "Inkomstenbelasting", "Vennootschapsbelasting", "Salarisadministratie", "Belastingadvies", "Investeringsaftrek"],
+            "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Diensten",
+                "itemListElement": [
+                    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Boekhouding en financiële administratie uitbesteden"}},
+                    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Btw-aangifte en ICP-opgaaf"}},
+                    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Jaarrekening laten opstellen"}},
+                    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Inkomstenbelasting- en vennootschapsbelastingaangifte"}},
+                    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Salarisadministratie"}},
+                    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Belastingadvies en investeringsaftrek (KIA, EIA, MIA)"}}
+                ]
+            }
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {"@type": "Question", "name": "Kan ik bij Bon-Courage terecht als startende ondernemer?", "acceptedAnswer": {"@type": "Answer", "text": "Zeker. We helpen u de administratie praktisch in te richten en bespreken de financiële en fiscale aandachtspunten bij de start."}},
+                {"@type": "Question", "name": "Wat kost een boekhouder?", "acceptedAnswer": {"@type": "Answer", "text": "Dat hangt af van het aantal transacties, de rechtsvorm en hoeveel u zelf doet. Voor terugkerend werk maken we zoveel mogelijk vaste prijsafspraken, bijvoorbeeld een vast maandbedrag, die we vooraf met u bespreken."}},
+                {"@type": "Question", "name": "Moet ik zelf mijn administratie bijhouden?", "acceptedAnswer": {"@type": "Answer", "text": "Niet per se. U kunt uw administratie zelf voorbereiden of meer van de verwerking aan ons uitbesteden. We bespreken samen wat past."}},
+                {"@type": "Question", "name": "Met welke boekhoudsoftware werken jullie?", "acceptedAnswer": {"@type": "Answer", "text": "We werken met SnelStart om administraties digitaal te verwerken en waar mogelijk processen te automatiseren."}},
+                {"@type": "Question", "name": "Kan ik overstappen van mijn huidige boekhouder?", "acceptedAnswer": {"@type": "Answer", "text": "Ja. We bekijken samen hoe uw administratie is ingericht en wat nodig is voor een soepele overstap."}},
+                {"@type": "Question", "name": "Werken jullie met vaste tarieven?", "acceptedAnswer": {"@type": "Answer", "text": "Voor standaardwerkzaamheden maken we zoveel mogelijk vaste prijsafspraken. Aanvullende werkzaamheden bespreken we vooraf."}},
+                {"@type": "Question", "name": "Verzorgen jullie btw-aangifte, jaarrekening en belastingaangifte?", "acceptedAnswer": {"@type": "Answer", "text": "Ja. Naast de dagelijkse boekhouding verzorgen we btw-aangiften en ICP-opgaaf, de jaarrekening en de aangifte inkomstenbelasting of vennootschapsbelasting."}},
+                {"@type": "Question", "name": "Kunnen jullie helpen met belasting besparen en investeringsaftrek?", "acceptedAnswer": {"@type": "Answer", "text": "We denken actief mee over fiscale mogelijkheden binnen de geldende regels, zoals de kleinschaligheidsinvesteringsaftrek (KIA), energie-investeringsaftrek (EIA) en milieu-investeringsaftrek (MIA), en controleren of u hier gebruik van kunt maken."}},
+                {"@type": "Question", "name": "Voor welke regio's werkt Bon-Courage?", "acceptedAnswer": {"@type": "Answer", "text": "Vanuit Beek werken we voor ondernemers in heel Zuid-Limburg, onder meer in Sittard-Geleen, Maastricht, Stein, Elsloo, Meerssen, Heerlen en omgeving. Dankzij digitale administratie kan dat ook op afstand."}}
+            ]
+        }
+    </script>
 </head>
 <body>
+    <a class="skip-link" href="#main">Ga naar de inhoud</a>
 
-    <nav class="navbar">
-        <div class="logo-container">
-            <a href="#home">
-                <img src="logo.png" alt="Bon Courage Logo" class="site-logo">
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Hoofdnavigatie">
+            <a class="brand" href="index.html" aria-label="Bon Courage, naar de startpagina">
+                <img src="assets/images/logo-navbar.png" alt="Bon-Courage" class="site-logo" width="870" height="609">
             </a>
-        </div>
-        
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#diensten">Diensten</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#vacatures">Vacatures</a></li>
-        </ul>
-        
-        <div class="nav-icons">
-            <a href="mailto:dave.collas@bon-courage.nl" class="mail-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-            </a>
-        </div>
-    </nav>
-
-    <header id="home" class="hero">
-        <div class="hero-content">
-            <h1>Financieel overzicht geeft rust.</h1>
-            <p>Bon Courage ondersteunt ondernemers bij hun volledige administratie met een persoonlijke aanpak en deskundig advies.</p>
-            <a href="#contact" class="cta-button">Maak een afspraak</a>
-        </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-active">Home</a></li>
+                <li><a href="over.html">Over ons</a></li>
+                <li><a href="diensten.html">Diensten</a></li>
+                <li><a href="tarieven.html">Tarieven</a></li>
+                <li><a href="vacatures.html">Vacatures</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a class="button button-primary nav-cta" href="contact.html">Vrijblijvend kennismaken</a>
+        </nav>
     </header>
 
-    <section class="home-info container">
-        <div class="mission-box">
-            <h2 class="section-title">Over Ons</h2>
-            <p class="mission-text">
-                Bij <strong>Bon Courage</strong> geloven we dat cijfers niet alleen de afsluiting van het verleden zijn, maar de brandstof voor uw toekomst. Wij zijn geen traditioneel administratiekantoor; wij zijn uw strategische partner die staat voor een efficiënt en doelgerichte aanpak. Door alle overbodige ballast overboord te gooien, creëren we ruimte voor wat er écht toe doet: uw groei.
-                <br><br>
-                Onze kracht ligt in onze innovatiekracht. Met <strong>duidelijke, efficiente software</strong> automatiseren we tijdrovende processen, waardoor foutmarges verdwijnen en u altijd real-time inzicht heeft in uw cijfers. Dit stelt ons in staat om hoogwaardige kwaliteit te leveren tegen <strong>scherpe en transparante tarieven</strong>. 
-                <br><br>
-                Geen verborgen kosten of ingewikkelde facturen, maar volledige ontzorging via ons <strong>All-in Ontzorging</strong>. Van de dagelijkse administratie tot de jaarrekening en fiscaal advies; wij regelen het onder één dak. Bon Courage staat voor rust, deskundigheid en de moed om samen verder te kijken dan de balans.
-            </p>
-        </div>
+    <main id="main">
+        <section class="home-hero shape-divider shape-to-white">
+            <div class="container home-hero-layout">
+                <div class="home-hero-copy">
+                    <p class="hero-eyebrow">Persoonlijke financiële dienstverlening in Beek</p>
+                    <h1>Wij kijken <em>verder</em> dan uw cijfers.</h1>
+                    <p class="hero-lead">Op zoek naar een persoonlijke boekhouder of administratiekantoor in Beek en Zuid-Limburg? Bon-Courage verzorgt uw boekhouding, btw-aangifte, jaarrekening en belastingadvies, voor zzp, mkb en starters.</p>
+                    <p class="hero-promise">Minder administratieve zorgen, meer financieel inzicht en een boekhouder die actief met u meedenkt.</p>
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="contact.html">Plan een vrijblijvende kennismaking</a>
+                        <a class="hero-link" href="diensten.html">Ontdek onze diensten</a>
+                    </div>
+                </div>
+                <div class="home-hero-photo">
+                    <img src="assets/images/overleg-stock.jpg" alt="Ondernemers overleggen aan tafel" width="800" height="533">
+                </div>
+            </div>
+        </section>
 
-        <div class="benefits-grid">
-            <div class="benefit-item">
-                <div class="benefit-img" style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=500');"></div>
-                <div class="benefit-content">
-                    <h3>1. Efficiënte Software</h3>
-                    <p>Snellere verwerking en u heeft de cijfers altijd bij de hand.</p>
+        <section class="section-space section-warm home-values-section shape-divider shape-to-navy">
+            <div class="container">
+                <div class="section-heading">
+                    <div><p class="section-label">Waarom Bon-Courage?</p><h2>Een boekhouder moet waarde toevoegen.</h2></div>
+                    <p>Wij verwerken niet alleen uw cijfers, maar denken mee over kansen en keuzes binnen de geldende regels.</p>
+                </div>
+                <div class="value-grid">
+                    <article class="value-card"><span class="value-number">1</span><h3>Efficiënt</h3><p>Digitale administratie met SnelStart en minder onnodig handwerk.</p></article>
+                    <article class="value-card"><span class="value-number">2</span><h3>Duidelijke tarieven</h3><p>Heldere afspraken vooraf, ook als aanvullend werk nodig is.</p></article>
+                    <article class="value-card"><span class="value-number">3</span><h3>Persoonlijk</h3><p>Een vast aanspreekpunt en ondersteuning die bij uw onderneming past.</p></article>
                 </div>
             </div>
-            <div class="benefit-item">
-                <div class="benefit-img" style="background-image: url('https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&q=80&w=500');"></div>
-                <div class="benefit-content">
-                    <h3>2. Lean & Mean</h3>
-                    <p>Wij focussen op de kern en automatiseren waar mogelijk. Geen onnodige ballast.</p>
+        </section>
+
+        <section class="section-space home-services-section shape-divider shape-to-warm">
+            <div class="container">
+                <div class="section-heading">
+                    <div><p class="section-label">Onze diensten</p><h2>Alles voor uw financiële administratie.</h2></div>
+                    <p>Boekhouding uitbesteden, btw-aangifte laten doen, jaarrekening laten opstellen of salarisadministratie uitbesteden? U kiest wat u uitbesteedt, wij verzorgen de financiële administratie.</p>
+                </div>
+                <div class="feature-grid home-bento">
+                    <article class="service-card"><h3>Boekhouding en administratie</h3><p>Uw facturen, bankmutaties en financiële gegevens overzichtelijk verwerkt.</p><a href="diensten.html#boekhouding">Meer over boekhouding</a></article>
+                    <article class="service-card"><h3>Btw-aangiften</h3><p>Periodieke aangiften en aandacht voor deadlines en bijzondere btw-vragen.</p><a href="diensten.html#btw">Meer over btw-aangiften</a></article>
+                    <article class="service-card"><h3>Jaarrekening</h3><p>Een helder beeld van de financiële positie en resultaten van uw onderneming.</p><a href="diensten.html#jaarrekening">Meer over de jaarrekening</a></article>
+                    <article class="service-card"><h3>Inkomstenbelasting</h3><p>Uw aangifte, met aandacht voor uw persoonlijke en zakelijke situatie.</p><a href="diensten.html#inkomstenbelasting">Meer over inkomstenbelasting</a></article>
+                    <article class="service-card"><h3>Vennootschapsbelasting</h3><p>Ondersteuning bij de aangifte en fiscale positie van uw BV.</p><a href="diensten.html#vennootschapsbelasting">Meer over vennootschapsbelasting</a></article>
+                    <article class="service-card"><h3>Belastingadvies en salarisadministratie</h3><p>Meedenken over belastingvoordelen en investeringsaftrek (KIA, EIA, MIA), plus ondersteuning bij loonverwerking.</p><a href="diensten.html#advies">Bekijk alle diensten</a></article>
+                </div>
+                <p class="hero-actions"><a class="button button-outline" href="diensten.html">Bekijk al onze diensten</a></p>
+            </div>
+        </section>
+
+        <section class="section-space section-warm home-software-section shape-divider shape-to-blue">
+            <div class="container software-panel">
+                <div>
+                    <p class="section-label">Slim digitaal samenwerken</p>
+                    <h2>Minder administratie. Meer ondernemen.</h2>
+                    <p>Met SnelStart en digitale factuurverwerking houden we uw administratie overzichtelijk en beperken we handmatig werk.</p>
+                    <ul class="check-list"><li>Digitale verwerking van documenten</li><li>Bankkoppelingen waar passend</li><li>Financiële gegevens beter toegankelijk</li></ul>
+                </div>
+                <div class="software-mark"><img src="assets/images/snelstart-logo.svg" alt="SnelStart" width="4000" height="706" loading="lazy"></div>
+            </div>
+        </section>
+
+        <section class="section-space home-audience-section shape-divider shape-to-warm">
+            <div class="container editorial-split">
+                <div><p class="section-label">Voor wie?</p><h2>Boekhouder voor zzp, mkb en starters in Zuid-Limburg.</h2></div>
+                <div class="editorial-copy">
+                    <p>We ondersteunen ondernemers die hun administratie goed willen regelen en waarde hechten aan persoonlijk contact en financieel advies. Of u nu uw boekhouding wilt uitbesteden, een externe boekhouder zoekt of uw bedrijfsadministratie wilt optimaliseren: u heeft een vast aanspreekpunt dat meedenkt.</p>
+                    <ul class="audience-list"><li>Zelfstandigen en zzp'ers</li><li>Eenmanszaken</li><li>VOF's</li><li>BV's</li><li>Startende ondernemers</li><li>Kleine en middelgrote bedrijven</li></ul>
+                    <p>Ons kantoor zit in Beek. We werken voor ondernemers in <a class="text-link" href="werkgebied.html">Sittard-Geleen, Maastricht, Stein, Elsloo, Meerssen, Heerlen en de rest van Zuid-Limburg</a>, en dankzij digitale administratie ook op afstand.</p>
+                    <p>Net begonnen? Lees alles over <a class="text-link" href="starters.html">boekhouding voor startende ondernemers</a>.</p>
                 </div>
             </div>
-            <div class="benefit-item">
-                <div class="benefit-img" style="background-image: url('https://images.unsplash.com/photo-1556742044-3c52d6e88c62?auto=format&fit=crop&q=80&w=500');"></div>
-                <div class="benefit-content">
-                    <h3>3. Scherpe Tarieven</h3>
-                    <p>Eerlijke prijzen door onze efficiënte werkwijze. Helderheid vooraf, geen verrassingen.</p>
+        </section>
+
+        <section class="section-space section-warm process-section home-process-section shape-divider shape-to-white">
+            <div class="container">
+                <div class="section-heading"><div><p class="section-label">In vijf stappen</p><h2>Zo werken we samen.</h2></div><p>Een goede administratie hoeft niet ingewikkeld te zijn.</p></div>
+                <ol class="steps">
+                    <li><h3>Kennismaken</h3><p>Uw onderneming, administratie en wensen.</p></li>
+                    <li><h3>Voorstel</h3><p>Heldere afspraken over werk en tarieven.</p></li>
+                    <li><h3>Digitaal inrichten</h3><p>Een praktische start met SnelStart.</p></li>
+                    <li><h3>Aan de slag</h3><p>Wij verzorgen het afgesproken werk.</p></li>
+                    <li><h3>Meedenken</h3><p>Samen vooruitkijken naar kansen.</p></li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="section-space faq-section home-faq-section shape-divider shape-to-blue">
+            <div class="container faq-layout">
+                <div><p class="section-label">Goed om te weten</p><h2>Veelgestelde vragen</h2><p>Staat uw vraag er niet tussen? We helpen u graag verder.</p><a class="text-link" href="contact.html">Stel uw vraag</a></div>
+                <div class="faq-list">
+                    <details><summary>Kan ik bij Bon-Courage terecht als startende ondernemer?</summary><p>Zeker. We helpen u de administratie praktisch in te richten en bespreken de financiële en fiscale aandachtspunten bij de start.</p></details>
+                    <details><summary>Moet ik zelf mijn administratie bijhouden?</summary><p>Niet per se. U kunt uw administratie zelf voorbereiden of meer van de verwerking aan ons uitbesteden. We bespreken samen wat past.</p></details>
+                    <details><summary>Met welke boekhoudsoftware werken jullie?</summary><p>We werken met SnelStart om administraties digitaal te verwerken en waar mogelijk processen te automatiseren.</p></details>
+                    <details><summary>Kan ik overstappen van mijn huidige boekhouder?</summary><p>Ja. We bekijken samen hoe uw administratie is ingericht en wat nodig is voor een soepele overstap.</p></details>
+                    <details><summary>Werken jullie met vaste tarieven?</summary><p>Voor standaardwerkzaamheden maken we zoveel mogelijk vaste prijsafspraken. Aanvullende werkzaamheden bespreken we vooraf.</p></details>
+                    <details><summary>Wat kost een boekhouder?</summary><p>Dat hangt af van het aantal transacties, uw rechtsvorm en hoeveel u zelf doet. Voor terugkerend werk maken we zoveel mogelijk vaste prijsafspraken, bijvoorbeeld een vast maandbedrag. <a href="tarieven.html">Lees hoe onze tarieven werken</a>.</p></details>
+                    <details><summary>Verzorgen jullie btw-aangifte, jaarrekening en belastingaangifte?</summary><p>Ja. Naast de dagelijkse boekhouding verzorgen we btw-aangiften en ICP-opgaaf, de jaarrekening en de aangifte inkomstenbelasting of vennootschapsbelasting.</p></details>
+                    <details><summary>Kunnen jullie helpen met belasting besparen en investeringsaftrek?</summary><p>We denken actief mee over fiscale mogelijkheden binnen de geldende regels, zoals de kleinschaligheidsinvesteringsaftrek (KIA), energie-investeringsaftrek (EIA) en milieu-investeringsaftrek (MIA), en controleren of u hier gebruik van kunt maken.</p></details>
+                    <details><summary>Voor welke regio's werkt Bon-Courage?</summary><p>Vanuit Beek werken we voor ondernemers in heel Zuid-Limburg, onder meer in Sittard-Geleen, Maastricht, Stein, Elsloo, Meerssen, Heerlen en omgeving. <a href="werkgebied.html">Bekijk ons werkgebied</a>.</p></details>
                 </div>
             </div>
-            <div class="benefit-item">
-                <div class="benefit-img" style="background-image: url('all-in.jpg');"></div>
-                <div class="benefit-content">
-                    <h3>4. All-in Ontzorging</h3>
-                    <p>Volledige ontzorging van aangifte tot jaarrekening. Alles in één overzichtelijk pakket.</p>
+        </section>
+
+        <section class="section-space expertise-section home-expertise-section shape-divider shape-to-navy" id="aanvraag">
+            <div class="container">
+                <div class="section-heading">
+                    <div><p class="section-label">Vrijblijvend kennismaken</p><h2>Waar kunnen we u mee helpen?</h2></div>
+                    <p>Kies een onderwerp en vertel ons kort wat u nodig heeft. U kunt ook direct <a href="mailto:daniel.commers@bon-courage.nl">een e-mail sturen</a>.</p>
                 </div>
+                <form id="aanvraag-form" class="request-form" hidden>
+                    <fieldset id="expertise-step">
+                        <legend>Kies uw onderwerpen</legend>
+                        <div class="choice-grid">
+                            <label class="choice-card"><input type="checkbox" name="expertise" value="Boekhouding"><span><strong>Boekhouding</strong><small>Facturen, uitgaven en administratie</small></span></label>
+                            <label class="choice-card"><input type="checkbox" name="expertise" value="Btw-aangiften"><span><strong>Btw-aangiften</strong><small>Aangiften en btw-vragen</small></span></label>
+                            <label class="choice-card"><input type="checkbox" name="expertise" value="Belastingaangiften"><span><strong>Belastingaangiften</strong><small>Inkomsten- of vennootschapsbelasting</small></span></label>
+                            <label class="choice-card"><input type="checkbox" name="expertise" value="Advies"><span><strong>Advies</strong><small>Financiële en fiscale keuzes</small></span></label>
+                            <label class="choice-card"><input type="checkbox" name="expertise" value="Anders"><span><strong>Anders</strong><small>Vertel ons wat u nodig heeft</small></span></label>
+                        </div>
+                        <p id="expertise-error" class="form-error" role="alert" hidden>Kies minimaal één onderwerp om verder te gaan.</p>
+                        <button class="button button-primary" id="request-next" type="button">Verder naar uw gegevens</button>
+                    </fieldset>
+                    <fieldset id="details-step" hidden disabled>
+                        <legend>Uw gegevens</legend>
+                        <div class="form-grid">
+                            <label>Naam <span aria-hidden="true">*</span><input name="name" autocomplete="name" maxlength="100" required></label>
+                            <label>E-mailadres <span aria-hidden="true">*</span><input name="email" type="email" autocomplete="email" maxlength="254" required></label>
+                            <label>Telefoonnummer <span class="optional">(optioneel)</span><input name="phone" type="tel" autocomplete="tel" maxlength="40"></label>
+                            <label>Bedrijfsnaam <span class="optional">(optioneel)</span><input name="company" autocomplete="organization" maxlength="100"></label>
+                            <label class="form-wide">Uw vraag <span aria-hidden="true">*</span><textarea name="message" rows="5" maxlength="1500" required></textarea></label>
+                        </div>
+                        <p class="form-note">Hiermee maakt u een e-mail aan in uw eigen e-mailprogramma. U controleert en verstuurt het bericht zelf.</p>
+                        <div class="form-actions"><button class="button button-outline" id="request-back" type="button">Terug</button><button class="button button-primary" type="submit">Maak e-mail klaar</button></div>
+                        <p id="request-ready" class="request-ready" role="status" hidden>Uw bericht is nog niet verstuurd. <a id="request-mail" href="mailto:daniel.commers@bon-courage.nl">Open uw e-mailprogramma</a> en verstuur het daar.</p>
+                    </fieldset>
+                </form>
+                <noscript><p>Om de keuzehulp te gebruiken is JavaScript nodig. U kunt ook direct <a href="mailto:daniel.commers@bon-courage.nl">een e-mail sturen</a>.</p></noscript>
+            </div>
+        </section>
+
+        <section class="contact-band shape-divider shape-to-deep">
+            <div class="container contact-band-inner">
+                <div><h2>Tijd voor een boekhouder die met u meedenkt?</h2><p>Plan een vrijblijvende kennismaking en ontdek wat Bon-Courage voor uw onderneming kan betekenen.</p></div>
+                <a class="button button-light" href="contact.html">Plan een kennismaking</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-col footer-brand">
+                <a class="footer-logo" href="index.html" aria-label="Bon-Courage, naar de startpagina"><img src="assets/images/logo-footer.png" alt="Bon-Courage" width="870" height="609" loading="lazy"></a>
+                <p class="footer-tagline">Wij kijken verder dan uw cijfers.</p>
+                <p>Persoonlijke aandacht, slimme administratie en fiscaal advies voor ondernemers.</p>
+            </div>
+            <nav class="footer-col" aria-label="Footer navigatie">
+                <h2>Ontdek</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="over.html">Over ons</a></li>
+                    <li><a href="diensten.html">Diensten</a></li>
+                    <li><a href="tarieven.html">Tarieven</a></li>
+                    <li><a href="werkgebied.html">Werkgebied</a></li>
+                    <li><a href="starters.html">Voor starters</a></li>
+                    <li><a href="overstappen.html">Overstappen</a></li>
+                    <li><a href="vacatures.html">Vacatures</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </nav>
+            <nav class="footer-col" aria-label="Onze diensten">
+                <h2>Onze diensten</h2>
+                <ul>
+                    <li><a href="diensten.html#boekhouding">Boekhouding</a></li>
+                    <li><a href="diensten.html#btw">Btw-aangiften</a></li>
+                    <li><a href="diensten.html#jaarrekening">Jaarrekening</a></li>
+                    <li><a href="diensten.html#salarisadministratie">Salarisadministratie</a></li>
+                    <li><a href="diensten.html#advies">Fiscaal advies</a></li>
+                </ul>
+            </nav>
+            <div class="footer-col">
+                <h2>Contact</h2>
+                <address class="footer-address"><p>Brugstraat 2<br>6191 KC Beek</p>
+                    <p><a class="footer-contact-link" href="tel:+31638850967">+31 6 38850967</a><br><a class="footer-contact-link" href="mailto:daniel.commers@bon-courage.nl">daniel.commers@bon-courage.nl</a></p></address>
+                <p class="footer-kvk">KvK-nummer: 99207052</p>
+                <a class="footer-contact-link" href="contact.html">Neem contact op &rarr;</a>
             </div>
         </div>
-    </section>
-
-    <section id="diensten" class="services-section">
-        <div class="container">
-            <h2 class="section-title white-text">Diensten</h2>
-            <div class="services-grid">
-                <div class="service-card dark-card">
-                    <h3>Boekhouding</h3>
-                    <p>Uw volledige administratie digitaal verwerkt. Van facturen tot bankkoppelingen.</p>
-                </div>
-                <div class="service-card dark-card">
-                    <h3>Fiscaal Advies</h3>
-                    <p>Proactief advies over fiscale voordelen en de beste koers voor uw onderneming.</p>
-                </div>
-                <div class="service-card dark-card">
-                    <h3>Jaarrekening</h3>
-                    <p>Heldere rapportages die u direct inzicht geven in de groei van uw bedrijf.</p>
-                </div>
-            </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Bon-Courage</p>
+            <p><a href="privacy.html">Privacy</a> &nbsp; &middot; &nbsp; <a href="cookies.html">Cookies</a></p>
         </div>
-    </section>
-
-    <section id="vacatures" class="vacatures-section-white">
-        <div class="container" style="text-align: center;">
-            <h2 class="section-title">Vacatures</h2>
-            <p style="margin-bottom: 40px; color: #444;">Wil jij werken bij een kantoor dat houdt van innovatie? Wij zoeken talent dat modern durft te werken.</p>
-            
-            <div class="open-sollicitatie-box standout">
-                <h3>Open Sollicitatie</h3>
-                <p>Staat jouw droombaan er niet tussen, maar denk je dat je <strong>perfect bij ons team past</strong>? Wij zijn altijd op zoek naar <strong>gedreven talent</strong> dat met ons mee wil groeien.</p>
-                <a href="mailto:daniel.commers@bon-courage.nl?subject=Open%20Sollicitatie%20Bon%20Courage" class="cta-button pulse-btn">Direct solliciteren via mail</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="container">
-        <h2 class="section-title">Contact</h2>
-        <div class="contact-wrapper">
-            <div style="margin-bottom: 30px; text-align: center; color: #002D62;">
-                <p><strong>Bon Courage</strong></p>
-                <p>Brugstraat 2, 6191 KC Beek</p>
-                <p>Tel: <a href="tel:+31638850967" style="color: inherit; text-decoration: none;">+31 6 38850967</a></p>
-                <p>Email: <a href="mailto:daniel.commers@bon-courage.nl" style="color: inherit; text-decoration: none;">daniel.commers@bon-courage.nl</a></p>
-            </div>
-            <form class="contact-form">
-                <div class="form-group">
-                    <label>Naam</label>
-                    <input type="text" placeholder="Uw naam" required>
-                </div>
-                <div class="form-group">
-                    <label>E-mail</label>
-                    <input type="email" placeholder="Uw e-mailadres" required>
-                </div>
-                <div class="form-group">
-                    <label>Bericht</label>
-                    <textarea rows="4" placeholder="Wat kunnen we voor u doen?"></textarea>
-                </div>
-                <button type="submit" class="cta-button" style="width: 100%; border: none;">Verstuur bericht</button>
-            </form>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 Bon Courage | Financiële Administratie & Advies</p>
     </footer>
-
 </body>
 </html>

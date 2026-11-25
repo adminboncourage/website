@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="nl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Contact met Bon-Courage, boekhouder en administratiekantoor in Beek (Brugstraat 2). Plan een vrijblijvende kennismaking voor boekhouding, btw, jaarrekening of belastingadvies in Zuid-Limburg.">
+    <link rel="canonical" href="https://bon-courage.nl/contact.html">
+    <title>Contact | Boekhouder in Beek, Zuid-Limburg | Bon-Courage</title>
+    <link rel="icon" href="favicon.ico" sizes="48x48">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/animations.js" defer></script>
+    <script src="assets/js/contact.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Ga naar de inhoud</a>
+
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Hoofdnavigatie">
+            <a class="brand" href="index.html" aria-label="Bon Courage, naar de startpagina">
+                <img src="assets/images/logo-navbar.png" alt="Bon-Courage" class="site-logo" width="870" height="609">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="over.html">Over ons</a></li>
+                <li><a href="diensten.html">Diensten</a></li>
+                <li><a href="tarieven.html">Tarieven</a></li>
+                <li><a href="vacatures.html">Vacatures</a></li>
+                <li><a href="contact.html" class="nav-active">Contact</a></li>
+            </ul>
+            <a class="button button-primary nav-cta" href="#contactformulier">Vrijblijvend kennismaken</a>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section class="hero-alt shape-divider shape-to-blue">
+            <div class="container">
+                <div class="hero-alt-layout">
+                    <div>
+                        <p class="section-label">Contact</p>
+                        <h1>Laten we kennismaken.</h1>
+                        <p class="hero-lead">Bespreek vrijblijvend uw onderneming, uw administratie en de ondersteuning die u zoekt. We denken graag met u mee.</p>
+                    </div>
+                    <img class="hero-alt-image" src="assets/images/overleg-stock.jpg" alt="Twee mensen bespreken documenten" width="800" height="533">
+                </div>
+            </div>
+        </section>
+
+        <section class="section-space shape-divider shape-to-deep">
+            <div class="container contact-layout">
+                <div class="contact-info">
+                    <h2>Contactgegevens</h2>
+                    <p>Neem rechtstreeks contact op of stuur ons een bericht via het formulier.</p>
+                    <div class="info-block">
+                        <h3>Bezoekadres</h3>
+                        <p>Brugstraat 2<br>6191 KC Beek</p>
+                    </div>
+                    <div class="info-block">
+                        <h3>KvK-nummer</h3>
+                        <p>99207052</p>
+                    </div>
+                    <div class="info-block">
+                        <h3>Telefoon</h3>
+                        <p><a href="tel:+31638850967">+31 6 38850967</a></p>
+                    </div>
+                    <div class="info-block">
+                        <h3>E-mail</h3>
+                        <p><a href="mailto:daniel.commers@bon-courage.nl">daniel.commers@bon-courage.nl</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-panel" id="contactformulier">
+                    <h2>Stuur ons een bericht</h2>
+                    <p>Vertel ons kort waar uw vraag over gaat. Na het invullen opent uw e-mailprogramma met een conceptbericht. U controleert en verstuurt het zelf.</p>
+                    <form id="contact-form" class="contact-form" hidden>
+                        <div class="form-grid">
+                            <label>Naam <span aria-hidden="true">*</span><input name="name" autocomplete="name" maxlength="100" required></label>
+                            <label>Bedrijfsnaam <span class="optional">(optioneel)</span><input name="company" autocomplete="organization" maxlength="100"></label>
+                            <label>E-mailadres <span aria-hidden="true">*</span><input name="email" type="email" autocomplete="email" maxlength="254" required></label>
+                            <label>Telefoonnummer <span class="optional">(optioneel)</span><input name="phone" type="tel" autocomplete="tel" maxlength="40"></label>
+                            <label class="form-wide">Waar kunnen we u mee helpen?
+                                <select name="topic" required>
+                                    <option value="">Kies een onderwerp</option>
+                                    <option>Boekhouding en administratie</option>
+                                    <option>Btw-aangiften</option>
+                                    <option>Jaarrekening</option>
+                                    <option>Inkomstenbelasting</option>
+                                    <option>Vennootschapsbelasting</option>
+                                    <option>Salarisadministratie</option>
+                                    <option>Fiscaal of bedrijfseconomisch advies</option>
+                                    <option>Anders</option>
+                                </select>
+                            </label>
+                            <label class="form-wide">Bericht <span aria-hidden="true">*</span><textarea name="message" rows="5" maxlength="1500" required></textarea></label>
+                        </div>
+                        <p class="privacy-note">Uw gegevens worden niet via deze website verstuurd of opgeslagen. Met uw toestemming opent uw e-mailprogramma een bericht dat u zelf kunt controleren en verzenden.</p>
+                        <button class="button button-primary" type="submit">Open e-mailprogramma</button>
+                        <p id="contact-form-status" class="form-status" role="status" hidden></p>
+                        <a id="contact-mail-link" class="text-link" href="mailto:daniel.commers@bon-courage.nl" hidden>Open e-mailprogramma</a>
+                    </form>
+                    <noscript><p>Vul uw e-mailprogramma zelf aan: <a href="mailto:daniel.commers@bon-courage.nl">daniel.commers@bon-courage.nl</a>. U kunt ons ook bellen via <a href="tel:+31638850967">+31 6 38850967</a>.</p></noscript>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-col footer-brand">
+                <a class="footer-logo" href="index.html" aria-label="Bon-Courage, naar de startpagina"><img src="assets/images/logo-footer.png" alt="Bon-Courage" width="870" height="609" loading="lazy"></a>
+                <p class="footer-tagline">Wij kijken verder dan uw cijfers.</p>
+                <p>Persoonlijke aandacht, slimme administratie en fiscaal advies voor ondernemers.</p>
+            </div>
+            <nav class="footer-col" aria-label="Footer navigatie">
+                <h2>Ontdek</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="over.html">Over ons</a></li>
+                    <li><a href="diensten.html">Diensten</a></li>
+                    <li><a href="tarieven.html">Tarieven</a></li>
+                    <li><a href="werkgebied.html">Werkgebied</a></li>
+                    <li><a href="starters.html">Voor starters</a></li>
+                    <li><a href="overstappen.html">Overstappen</a></li>
+                    <li><a href="vacatures.html">Vacatures</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </nav>
+            <nav class="footer-col" aria-label="Onze diensten">
+                <h2>Onze diensten</h2>
+                <ul>
+                    <li><a href="diensten.html#boekhouding">Boekhouding</a></li>
+                    <li><a href="diensten.html#btw">Btw-aangiften</a></li>
+                    <li><a href="diensten.html#jaarrekening">Jaarrekening</a></li>
+                    <li><a href="diensten.html#salarisadministratie">Salarisadministratie</a></li>
+                    <li><a href="diensten.html#advies">Fiscaal advies</a></li>
+                </ul>
+            </nav>
+            <div class="footer-col">
+                <h2>Contact</h2>
+                <address class="footer-address"><p>Brugstraat 2<br>6191 KC Beek</p>
+                    <p><a class="footer-contact-link" href="tel:+31638850967">+31 6 38850967</a><br><a class="footer-contact-link" href="mailto:daniel.commers@bon-courage.nl">daniel.commers@bon-courage.nl</a></p></address>
+                <p class="footer-kvk">KvK-nummer: 99207052</p>
+                <a class="footer-contact-link" href="contact.html">Neem contact op &rarr;</a>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Bon-Courage</p>
+            <p><a href="privacy.html">Privacy</a> &nbsp; &middot; &nbsp; <a href="cookies.html">Cookies</a></p>
+        </div>
+    </footer>
+</body>
+</html>
