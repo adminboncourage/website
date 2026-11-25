@@ -474,7 +474,7 @@ legend { padding: 0; margin-bottom: 20px; color: var(--deep); font-size: 1.2rem;
 .bento-jump a:hover { color: var(--deep); background: var(--gold); }
 .bento-jump a:hover b { background: #fff; }
 .service-list.service-bento { counter-reset: service; display: grid; grid-template-columns: repeat(6, 1fr); gap: 22px; scroll-padding-top: 120px; }
-.service-bento .service-row { position: relative; counter-increment: service; display: flex; flex-direction: column; gap: 18px; overflow: hidden; margin: 0; padding: clamp(28px, 3vw, 40px); border: 0; border-radius: 22px; color: var(--muted); background: #fff; box-shadow: 0 12px 34px rgba(12, 46, 75, .07); scroll-margin-top: 110px; transition: transform .3s ease, box-shadow .3s ease; }
+.service-bento .service-row { position: relative; counter-increment: service; display: flex; flex-direction: column; gap: 18px; min-width: 0; overflow: hidden; margin: 0; padding: clamp(28px, 3vw, 40px); border: 0; border-radius: 22px; color: var(--muted); background: #fff; box-shadow: 0 12px 34px rgba(12, 46, 75, .07); scroll-margin-top: 180px; transition: transform .3s ease, box-shadow .3s ease; }
 .service-bento .service-row:hover { transform: translateY(-6px); box-shadow: 0 24px 54px rgba(12, 46, 75, .16); }
 .service-bento .service-row::after { content: ""; position: absolute; right: -50px; bottom: -50px; width: 150px; height: 150px; border-radius: 50%; background: rgba(245, 179, 97, .16); transition: transform .5s ease; pointer-events: none; }
 .service-bento .service-row:hover::after { transform: scale(1.6); }
@@ -518,9 +518,14 @@ legend { padding: 0; margin-bottom: 20px; color: var(--deep); font-size: 1.2rem;
 }
 @media (max-width: 640px) {
     .service-list.service-bento { grid-template-columns: 1fr; }
-    .service-bento .service-row, .service-bento #btw, .service-bento #jaarrekening, .service-bento #inkomstenbelasting, .service-bento #vennootschapsbelasting, .service-bento #salarisadministratie, .service-bento #advies, .service-bento #starters { grid-column: auto; }
+    .service-bento #boekhouding, .service-bento #btw, .service-bento #jaarrekening, .service-bento #inkomstenbelasting, .service-bento #vennootschapsbelasting, .service-bento #salarisadministratie, .service-bento #advies, .service-bento #belastingvoordeel, .service-bento #starters, .service-bento #all-in { grid-column: auto; }
+    .bento-jump { top: 88px; width: calc(100% - 36px); }
+    .service-bento .service-row { scroll-margin-top: 160px; }
+    .service-bento .service-row h2, .service-bento .service-row .text-link { overflow-wrap: anywhere; }
     .service-bento #boekhouding ul, .service-bento #belastingvoordeel ul { columns: 1; }
     .service-bento #all-in, .service-bento #all-in > div:last-child { flex-direction: column; align-items: flex-start; }
+    .service-bento #all-in > div:last-child { flex: auto; }
+    .service-bento #all-in .text-link { white-space: normal; }
 }
 @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }

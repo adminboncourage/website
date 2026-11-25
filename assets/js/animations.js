@@ -2,7 +2,7 @@ const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matc
 
 if (!reducedMotion && 'IntersectionObserver' in window) {
     const revealTargets = document.querySelectorAll(
-        'main > section:not(.home-hero):not(.hero-alt) > *, .value-card, .service-card, .steps li, .principle-grid article, .pricing-card, .blog-post, .switch-steps article'
+        'main > section:not(.home-hero):not(.hero-alt) > :not(.service-bento), .value-card, .service-card, .steps li, .principle-grid article, .pricing-card, .blog-post, .switch-steps article'
     );
 
     revealTargets.forEach((target, index) => {
