@@ -372,6 +372,43 @@ legend { padding: 0; margin-bottom: 20px; color: var(--deep); font-size: 1.2rem;
     .home-process-section .steps li::before { grid-row: 1 / span 2; }
     .home-process-section .steps h3, .home-process-section .steps p { grid-column: 2; }
 }
+.about-hero .hero-alt-layout { grid-template-columns: minmax(0, 1fr) minmax(0, 500px); }
+.about-hero-visual { position: relative; margin: 0 16px 16px 0; }
+.about-hero-visual::before { content: ""; position: absolute; inset: 20px -20px -20px 20px; border: 2px solid var(--gold); border-radius: 3px 70px 3px 3px; }
+.about-hero-visual .hero-alt-image { position: relative; border-radius: 3px 70px 3px 3px; }
+.about-story { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: clamp(42px, 8vw, 120px); align-items: center; }
+.about-story-heading h2 { max-width: 480px; margin-bottom: 30px; }
+.about-story-accent { display: block; width: clamp(110px, 15vw, 200px); height: 7px; background: var(--gold); }
+.about-story-copy { max-width: 620px; padding-left: clamp(24px, 4vw, 55px); border-left: 1px solid #b6c8d2; color: var(--muted); font-size: 1.08rem; }
+.about-story-copy p:last-child { margin-bottom: 0; }
+.about-philosophy { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1fr); gap: clamp(40px, 6vw, 90px); align-items: stretch; }
+.about-philosophy-intro { position: relative; isolation: isolate; overflow: hidden; display: flex; flex-direction: column; justify-content: center; padding: clamp(32px, 4vw, 64px); border-radius: 3px 90px 3px 3px; color: #d3e0e8; background: var(--navy); }
+.about-philosophy-intro::before { content: ""; position: absolute; z-index: -1; right: -120px; bottom: -180px; width: 360px; height: 360px; border: 1px solid rgba(255, 255, 255, .16); border-radius: 50%; box-shadow: 0 0 0 55px rgba(255, 255, 255, .035), 0 0 0 110px rgba(255, 255, 255, .025); }
+.about-philosophy-intro .section-label { color: #ffd39e; }
+.about-philosophy-intro h2 { color: #fff; }
+.about-philosophy-intro p:last-child { max-width: 450px; margin-bottom: 0; font-size: 1.08rem; }
+.about-philosophy .principle-grid { display: grid; grid-template-columns: 1fr; gap: 0; margin: 0; counter-reset: principles; }
+.about-philosophy .principle-grid article { display: grid; grid-template-columns: 52px minmax(0, 1fr); column-gap: 20px; align-content: center; min-height: 130px; padding: 22px 0; border-top: 1px solid var(--line); counter-increment: principles; }
+.about-philosophy .principle-grid article:last-child { border-bottom: 1px solid var(--line); }
+.about-philosophy .principle-grid article::before { content: counter(principles); grid-row: 1 / span 2; color: #a76a2a; font-size: 2rem; line-height: 1; }
+.about-philosophy .principle-grid h3 { margin: 0 0 8px; font-size: clamp(1.25rem, 1.8vw, 1.65rem); }
+.about-philosophy .principle-grid p { margin: 0; }
+.about-partner { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); align-items: center; gap: clamp(36px, 6vw, 90px); }
+.about-partner-heading h2 { max-width: 500px; }
+.about-partner-heading::after { content: ""; display: block; width: 96px; height: 6px; background: var(--gold); }
+.about-partner-copy { padding: clamp(30px, 4vw, 54px); border-radius: 3px 70px 3px 3px; color: var(--muted); background: var(--paper); box-shadow: 0 18px 45px rgba(12, 46, 75, .06); font-size: 1.06rem; }
+.about-partner-copy .text-link { display: inline-block; margin-top: 12px; }
+@media (max-width: 850px) {
+    .about-hero .hero-alt-layout, .about-story, .about-philosophy, .about-partner { grid-template-columns: 1fr; gap: 32px; }
+    .about-hero-visual { max-width: 600px; }
+    .about-philosophy-intro { min-height: 340px; }
+}
+@media (max-width: 560px) {
+    .about-hero-visual { margin-right: 12px; }
+    .about-story-copy { padding-left: 20px; }
+    .about-philosophy-intro, .about-partner-copy { border-radius: 3px 60px 3px 3px; }
+    .about-philosophy .principle-grid article { grid-template-columns: 38px minmax(0, 1fr); gap: 0 15px; min-height: 0; }
+}
 .home-bento { counter-reset: hb; display: grid; grid-template-columns: repeat(6, 1fr); gap: 22px; }
 .home-bento .service-card { position: relative; counter-increment: hb; display: flex; flex-direction: column; gap: 12px; overflow: hidden; min-height: 250px; padding: clamp(26px, 3vw, 38px); border: 0; border-radius: 22px; color: var(--muted); background: #fff; box-shadow: 0 12px 34px rgba(12, 46, 75, .07); transition: transform .3s ease, box-shadow .3s ease; }
 .home-bento .service-card:hover { transform: translateY(-6px); box-shadow: 0 24px 54px rgba(12, 46, 75, .16); }
