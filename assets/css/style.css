@@ -372,10 +372,10 @@ legend { padding: 0; margin-bottom: 20px; color: var(--deep); font-size: 1.2rem;
     .home-process-section .steps li::before { grid-row: 1 / span 2; }
     .home-process-section .steps h3, .home-process-section .steps p { grid-column: 2; }
 }
-.about-hero .hero-alt-layout { grid-template-columns: minmax(0, 1fr) minmax(0, 500px); }
-.about-hero-visual { position: relative; margin: 0 16px 16px 0; }
-.about-hero-visual::before { content: ""; position: absolute; inset: 20px -20px -20px 20px; border: 2px solid var(--gold); border-radius: 3px 70px 3px 3px; }
-.about-hero-visual .hero-alt-image { position: relative; border-radius: 3px 70px 3px 3px; }
+.about-hero .hero-alt-layout, .pricing-hero .hero-alt-layout { grid-template-columns: minmax(0, 1fr) minmax(0, 500px); }
+.about-hero-visual, .pricing-hero-visual { position: relative; margin: 0 16px 16px 0; }
+.about-hero-visual::before, .pricing-hero-visual::before { content: ""; position: absolute; inset: 20px -20px -20px 20px; border: 2px solid var(--gold); border-radius: 3px 70px 3px 3px; }
+.about-hero-visual .hero-alt-image, .pricing-hero-visual .hero-alt-image { position: relative; border-radius: 3px 70px 3px 3px; }
 .about-story { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: clamp(42px, 8vw, 120px); align-items: center; }
 .about-story-heading h2 { max-width: 480px; margin-bottom: 30px; }
 .about-story-accent { display: block; width: clamp(110px, 15vw, 200px); height: 7px; background: var(--gold); }
@@ -399,15 +399,45 @@ legend { padding: 0; margin-bottom: 20px; color: var(--deep); font-size: 1.2rem;
 .about-partner-copy { padding: clamp(30px, 4vw, 54px); border-radius: 3px 70px 3px 3px; color: var(--muted); background: var(--paper); box-shadow: 0 18px 45px rgba(12, 46, 75, .06); font-size: 1.06rem; }
 .about-partner-copy .text-link { display: inline-block; margin-top: 12px; }
 @media (max-width: 850px) {
-    .about-hero .hero-alt-layout, .about-story, .about-philosophy, .about-partner { grid-template-columns: 1fr; gap: 32px; }
-    .about-hero-visual { max-width: 600px; }
+    .about-hero .hero-alt-layout, .pricing-hero .hero-alt-layout, .about-story, .about-philosophy, .about-partner { grid-template-columns: 1fr; gap: 32px; }
+    .about-hero-visual, .pricing-hero-visual { max-width: 600px; }
     .about-philosophy-intro { min-height: 340px; }
 }
 @media (max-width: 560px) {
-    .about-hero-visual { margin-right: 12px; }
+    .about-hero-visual, .pricing-hero-visual { margin-right: 12px; }
     .about-story-copy { padding-left: 20px; }
     .about-philosophy-intro, .about-partner-copy { border-radius: 3px 60px 3px 3px; }
     .about-philosophy .principle-grid article { grid-template-columns: 38px minmax(0, 1fr); gap: 0 15px; min-height: 0; }
+}
+.pricing-offer-section .pricing-grid { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); gap: 22px; counter-reset: pricing; }
+.pricing-offer-section .pricing-card { position: relative; overflow: hidden; min-height: 230px; padding: clamp(30px, 3.5vw, 48px); border: 0; border-radius: 3px 60px 3px 3px; background: var(--paper); counter-increment: pricing; box-shadow: 0 14px 36px rgba(12, 46, 75, .06); }
+.pricing-offer-section .pricing-card::before { content: counter(pricing); display: grid; width: 44px; height: 44px; place-items: center; margin-bottom: 24px; border-radius: 14px; color: var(--deep); background: var(--gold); font-weight: 800; transform: rotate(-6deg); }
+.pricing-offer-section .pricing-card h2 { font-size: clamp(1.45rem, 2.2vw, 2rem); }
+.pricing-offer-section .pricing-card p:last-child { margin-bottom: 0; }
+.pricing-offer-section .pricing-card:first-child { grid-row: span 2; color: #d3e0e8; background: var(--navy); }
+.pricing-offer-section .pricing-card:first-child h2 { color: #fff; }
+.pricing-offer-section .pricing-card:first-child p, .pricing-offer-section .pricing-card:first-child li { color: inherit; }
+.pricing-offer-section .pricing-card:first-child ul { display: grid; gap: 12px; margin: 28px 0 0; padding: 0; list-style: none; }
+.pricing-offer-section .pricing-card:first-child li { padding: 12px 0; border-bottom: 1px solid rgba(255, 255, 255, .18); }
+.pricing-offer-section .pricing-card:first-child li::before { content: "—"; margin-right: 12px; color: var(--gold); }
+.pricing-offer-section .pricing-card:nth-child(2) { background: var(--cream); }
+.pricing-process-layout { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(48px, 8vw, 120px); align-items: start; }
+.pricing-process-intro h2 { max-width: 460px; }
+.pricing-process-intro .pricing-note { margin: 32px 0 0; border-radius: 0 30px 0 0; }
+.pricing-process-section .pricing-steps { display: grid; grid-template-columns: 1fr; gap: 0; margin: 0; }
+.pricing-process-section .pricing-steps li { display: grid; grid-template-columns: 50px minmax(0, 1fr); align-items: center; gap: 20px; min-height: 110px; padding: 22px 0; border: 0; border-bottom: 1px solid var(--line); color: var(--muted); font-size: 1.05rem; }
+.pricing-process-section .pricing-steps li:first-child { border-top: 1px solid var(--line); }
+.pricing-process-section .pricing-steps li::before { display: grid; width: 45px; height: 45px; place-items: center; margin: 0; border: 1px solid var(--navy); border-radius: 50%; color: var(--deep); background: var(--paper); font-size: .95rem; }
+.pricing-process-section .pricing-steps li:first-child::before { border-color: var(--gold); background: var(--gold); }
+.pricing-faq-section .faq-layout { align-items: start; }
+@media (max-width: 850px) {
+    .pricing-offer-section .pricing-grid, .pricing-process-layout { grid-template-columns: 1fr; }
+    .pricing-offer-section .pricing-card:first-child { grid-row: auto; }
+    .pricing-process-layout { gap: 32px; }
+}
+@media (max-width: 560px) {
+    .pricing-offer-section .pricing-card { min-height: 0; }
+    .pricing-process-section .pricing-steps li { grid-template-columns: 45px minmax(0, 1fr); gap: 15px; }
 }
 .home-bento { counter-reset: hb; display: grid; grid-template-columns: repeat(6, 1fr); gap: 22px; }
 .home-bento .service-card { position: relative; counter-increment: hb; display: flex; flex-direction: column; gap: 12px; overflow: hidden; min-height: 250px; padding: clamp(26px, 3vw, 38px); border: 0; border-radius: 22px; color: var(--muted); background: #fff; box-shadow: 0 12px 34px rgba(12, 46, 75, .07); transition: transform .3s ease, box-shadow .3s ease; }
